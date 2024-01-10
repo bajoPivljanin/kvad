@@ -40,7 +40,7 @@ $other_places = $place->select_other();
                 ?>
             </select>
         </form>
-        <button>Pretrazi</button>
+        <button>Pretrazi kvadove</button>
         <!-- <input type="submit" value="submit" id="submitday"> -->
     </div>
 </div>
