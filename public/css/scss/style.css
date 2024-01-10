@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+}
+header .gornji-nav {
+  font-family: "Mulish", sans-serif;
+  margin: 0px 5rem;
+  border-bottom: 2px solid rgb(200, 200, 200);
+}
+header .gornji-nav a {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+header .gornji-nav .right-gornji {
+  text-align: right;
+}
+header .gornji-nav .right-gornji ul li {
+  display: inline-block;
+  padding-top: 15px;
+}
+header .gornji-nav .right-gornji ul li a {
+  font-size: 1.7rem;
+  margin: 0px 5px;
+  transition: 0.2s;
+}
+header .gornji-nav .right-gornji ul li a:hover {
+  color: gray;
+}
+header .gornji-nav .right-gornji #menuopen {
+  display: none;
+}
+header .gornji-nav .right-gornji #menuclose {
+  display: none;
+}
+header .donji-nav {
+  margin: 0px 5rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+}
+header .donji-nav ul {
+  margin-bottom: -1px;
+}
+header .donji-nav ul li {
+  display: inline-block;
+  padding: 10px 0px;
+}
+header .donji-nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+header .donji-nav ul li a:hover {
+  background: rgb(200, 200, 200);
+}
+header .donji-nav ul li i {
+  font-size: 1.2rem;
+}
+
+.hero-section {
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  background-image: url(../../../public/img/testkvad.jpg);
+  background-size: cover;
+  padding: 12rem;
+  background-position: 0rem -4rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+  color: white;
+  position: relative;
+}
+.hero-section h1 {
+  font-weight: 900;
+}
+.hero-section p {
+  font-size: 20px;
+}
+.hero-section .mesto {
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -35px;
+  text-align: left;
+  padding: 0.2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.hero-section .mesto select {
+  position: relative;
+  width: 600px;
+  padding: 18px;
+  border: 4px solid #9c7a00;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="black"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 35px;
+}
+.hero-section .mesto select option {
+  background-color: white;
+  font-weight: bold;
+}
+.hero-section .mesto button {
+  font-size: 1rem;
+  padding: 17px;
+  width: 200px;
+  border: 4px solid #9c7a00;
+  border-left: none;
+  background-color: #9c7a00;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.2s;
+}
+.hero-section .mesto button:hover {
+  background-color: white;
+  color: #9c7a00;
+}
+
+.ponude-section {
+  padding: 10rem;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+.ponude-section h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+.ponude-section p {
+  font-size: 1.2rem;
+}
+.ponude-section .col-md-6 {
+  background-image: url(../../../public/img/kvad.jpeg);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+  height: 20rem;
+  width: 47.5%;
+  margin: 15px;
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  background-position: -5rem -10rem;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.ponude-section .col-md-6 img {
+  position: absolute;
+  width: 25px;
+  top: 30px;
+  right: 30px;
+}
+.ponude-section .col-md-6 p {
+  color: #d4d4d4;
+  margin-top: -6px;
+}
+.ponude-section .col-md-6:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
+}
+.ponude-section .col-md-4 {
+  background-image: url(../../../public/img/kvad.jpeg);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 10000px inset;
+  background-position: -5rem -10rem;
+  height: 20rem;
+  width: 31%;
+  margin: 15px;
+  border-radius: 10px;
+  color: white;
+  padding: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.ponude-section .col-md-4:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 10000px inset;
+}
+.ponude-section .col-md-4 img {
+  position: absolute;
+  width: 25px;
+  top: 30px;
+  right: 30px;
+}
+.ponude-section .col-md-4 p {
+  color: #d4d4d4;
+  margin-top: -6px;
+}
+
+.mark-section {
+  font-family: "Mulish", sans-serif;
+  background-color: #9c7a00;
+  color: white;
+  text-align: center;
+  padding: 6rem;
+}
+.mark-section i {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.mark-section h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+.mark-section .col-md-4 {
+  margin-top: 4rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 8rem;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+}
+footer .left-footer {
+  display: table;
+  margin: 0 auto;
+}
+footer .left-footer #naslovfooter {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+footer .left-footer a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin: 0px 5px;
+  transition: 0.3s;
+  color: #9c7a00;
+}
+footer .left-footer a:hover {
+  color: #7e7b73;
+}
+footer .middle-footer {
+  display: table;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+footer .middle-footer P {
+  color: #9c7a00;
+  font-weight: 700;
+}
+footer .middle-footer ul {
+  padding-left: 0px;
+}
+footer .middle-footer ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+footer .middle-footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+footer .middle-footer ul li a:hover {
+  color: #7e7b73;
+}
+footer .right-footer {
+  display: table;
+  margin: 0 auto;
+}
+footer .right-footer P {
+  text-transform: uppercase;
+  color: #9c7a00;
+  font-weight: 700;
+}
+footer .right-footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+footer .right-footer a:hover {
+  color: #7e7b73;
+}
+footer .right-footer i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+footer #copyright {
+  position: absolute;
+  bottom: -15px;
+  color: #7e7b73;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  header .gornji-nav {
+    margin: 0px;
+  }
+  header .gornji-nav .col-md-6 {
+    width: 100%;
+    text-align: center;
+  }
+  header .gornji-nav .right-gornji {
+    text-align: left;
+  }
+  header .gornji-nav .right-gornji ul {
+    margin-bottom: 0rem;
+    padding: 0px;
+  }
+  header .gornji-nav .right-gornji ul li {
+    padding-top: 0px;
+  }
+  header .gornji-nav .right-gornji #menuopen {
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 4.5rem;
+    font-size: 1.5rem;
+  }
+  header .gornji-nav .right-gornji #menuclose {
+    display: none;
+    position: absolute;
+    right: 17px;
+    top: 4.5rem;
+    font-size: 1.5rem;
+  }
+  header .donji-nav {
+    text-align: center;
+    margin: 0px;
+  }
+  header .donji-nav ul li {
+    display: none;
+  }
+  .hero-section {
+    padding: 9rem 0rem;
+    background-position: 0rem 0rem;
+  }
+  .hero-section .mesto {
+    margin: 0px;
+    justify-content: start;
+  }
+  .hero-section .mesto form {
+    width: 100%;
+  }
+  .hero-section .mesto select {
+    width: 100%;
+  }
+  .hero-section .mesto button {
+    width: 90px;
+  }
+  .ponude-section {
+    padding: 8rem 0rem;
+  }
+  .ponude-section .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  .ponude-section .row .col-md-6 {
+    width: 90%;
+  }
+  .ponude-section .row .col-md-4 {
+    width: 90%;
+  }
+  .mark-section {
+    padding: 5rem 1rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  footer {
+    padding: 8rem 0rem;
+    text-align: center;
+  }
+  footer .left-footer {
+    margin-bottom: 3rem;
+  }
+  footer .right-footer {
+    margin-top: 3rem;
+  }
+  footer #copyright {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 950px) {
+  header .container {
+    max-width: 100%;
+  }
+  header .container .gornji-nav .col-md-6 {
+    width: 50%;
+  }
+  .hero-section {
+    padding: 9rem 0rem;
+    background-position: 0rem 0rem;
+  }
+  .ponude-section {
+    padding: 8rem 0rem;
+  }
+  .ponude-section .container {
+    max-width: 100%;
+  }
+  .ponude-section .container .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  .ponude-section .container .row .col-md-6 {
+    width: 45%;
+  }
+  .ponude-section .container .row .col-md-4 {
+    width: 94%;
+  }
+  .mark-section {
+    padding: 6rem 0rem;
+    zoom: 0.9;
+  }
+  .mark-section .container {
+    max-width: 95%;
+  }
+  footer {
+    padding: 8rem 2rem;
+  }
+  footer .container {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1024px) {
+  .ponude-section {
+    padding: 8rem 0rem;
+  }
+  .ponude-section .container {
+    max-width: 100%;
+  }
+  .ponude-section .container .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  .ponude-section .container .row .col-md-6 {
+    width: 45%;
+  }
+  .ponude-section .container .row .col-md-4 {
+    width: 93%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .ponude-section {
+    padding: 8rem 0rem;
+  }
+  .ponude-section .container {
+    max-width: 100%;
+  }
+  .ponude-section .container .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  .ponude-section .container .row .col-md-6 {
+    width: 46.5%;
+  }
+  .ponude-section .container .row .col-md-4 {
+    width: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */

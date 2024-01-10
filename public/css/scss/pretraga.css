@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  background-color: white;
+}
+header .gornji-nav {
+  font-family: "Mulish", sans-serif;
+  margin: 0px 5rem;
+  border-bottom: 2px solid rgb(200, 200, 200);
+}
+header .gornji-nav a {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+header .gornji-nav .right-gornji {
+  text-align: right;
+}
+header .gornji-nav .right-gornji ul li {
+  display: inline-block;
+  padding-top: 15px;
+}
+header .gornji-nav .right-gornji ul li a {
+  font-size: 1.7rem;
+  margin: 0px 5px;
+  transition: 0.2s;
+}
+header .gornji-nav .right-gornji ul li a:hover {
+  color: gray;
+}
+header .gornji-nav .right-gornji #menuopen {
+  display: none;
+}
+header .gornji-nav .right-gornji #menuclose {
+  display: none;
+}
+header .donji-nav {
+  margin: 0px 5rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+}
+header .donji-nav ul {
+  margin-bottom: -1px;
+}
+header .donji-nav ul li {
+  display: inline-block;
+  padding: 10px 0px;
+}
+header .donji-nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+header .donji-nav ul li a:hover {
+  background: rgb(200, 200, 200);
+}
+header .donji-nav ul li i {
+  font-size: 1.2rem;
+}
+
+.mesto {
+  background-color: transparent;
+  color: black;
+  margin: 5rem 0rem;
+}
+.mesto h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.mesto h1 span {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.mesto form {
+  margin: auto;
+  display: table;
+}
+.mesto select {
+  position: relative;
+  width: 600px;
+  padding: 18px;
+  border: 4px solid #9c7a00;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-appearance: none;
+       appearance: none;
+  outline: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="black"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 35px;
+}
+.mesto select option {
+  background-color: white;
+  font-weight: bold;
+}
+.mesto button {
+  font-size: 1rem;
+  padding: 18px;
+  width: 200px;
+  border: 4px solid #9c7a00;
+  border-left: none;
+  background-color: #9c7a00;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.2s;
+}
+.mesto button:hover {
+  background-color: white;
+  color: #9c7a00;
+}
+
+.oglasi {
+  align-items: center;
+  background-color: white;
+  margin: 0rem 15rem;
+  margin-bottom: 5rem;
+  padding: 5rem 0rem;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.43);
+}
+.oglasi .oglas1 {
+  padding: 2rem;
+  margin: 0rem 5rem;
+  margin-bottom: 5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.43);
+}
+.oglasi .oglas1 img {
+  width: 25rem;
+  border-radius: 5px;
+  float: right;
+}
+.oglasi .oglas1 h1 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: black;
+}
+.oglasi .oglas1 h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #3d3d3d;
+}
+.oglasi .oglas1 h2 I {
+  font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 8rem;
+  font-family: "Mulish", sans-serif;
+  position: relative;
+}
+footer .left-footer {
+  display: table;
+  margin: 0 auto;
+}
+footer .left-footer #naslovfooter {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+footer .left-footer a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin: 0px 5px;
+  transition: 0.3s;
+  color: #9c7a00;
+}
+footer .left-footer a:hover {
+  color: #7e7b73;
+}
+footer .middle-footer {
+  display: table;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+footer .middle-footer P {
+  color: #9c7a00;
+  font-weight: 700;
+}
+footer .middle-footer ul {
+  padding-left: 0px;
+}
+footer .middle-footer ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+footer .middle-footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+footer .middle-footer ul li a:hover {
+  color: #7e7b73;
+}
+footer .right-footer {
+  display: table;
+  margin: 0 auto;
+}
+footer .right-footer P {
+  text-transform: uppercase;
+  color: #9c7a00;
+  font-weight: 700;
+}
+footer .right-footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+footer .right-footer a:hover {
+  color: #7e7b73;
+}
+footer .right-footer i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+footer #copyright {
+  position: absolute;
+  bottom: -15px;
+  color: #7e7b73;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=pretraga.css.map */
